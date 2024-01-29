@@ -56,7 +56,7 @@ public class SpellChecker {
 
 	public static String spellChecker(String word, int threshold, String[] dictionary) {
 		// Your code goes here
-		int mindis = 0;
+		int mindis = 100000;
 		String res = "";
 		for (int i = 0; i < dictionary.length; i++) {
 			if (mindis > levenshtein(word, dictionary[i])) {
